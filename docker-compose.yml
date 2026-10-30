@@ -1,0 +1,15 @@
+services:
+  canva-bot:
+    build: .
+    container_name: canva_distribution_system
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - DATABASE_PATH=/app/data/canva_system.db
+      - HOST=0.0.0.0
+      - PORT=8000
