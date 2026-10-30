@@ -1,5 +1,5 @@
 # ==============================================================================
-# Dockerfile for Canva Pro Distribution System (Telegram Bot + FastAPI Dashboard)
+# Dockerfile for Canva Distribution System (Telegram Bot + FastAPI Dashboard)
 # Includes Tesseract OCR with French and Arabic language packs for receipt reading
 # ==============================================================================
 

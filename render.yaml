@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: canva-distribution-system
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: REQUIRED_CHANNEL
+        value: "@aitadz"
+      - key: CHANNEL_INVITE_LINK
+        value: "https://t.me/aitadz"
+      - key: TARGET_RIP
+        value: "00799999000749846290"
+      - key: TARGET_CCP
+        value: "00749846290"
+      - key: ACCOUNT_HOLDER
+        value: "Messaoud Khelifi Sadek"
+      - key: PAYMENT_AMOUNT
+        value: "500.0"
+      - key: ACCEPTED_AMOUNTS
+        value: "500.0,700.0"
+      - key: DATE_GRACE_DAYS
+        value: "1"
+      - key: MAX_SEATS
+        value: "500"
+      - key: REQUIRED_REFERRALS
+        value: "5"
+      - key: DATABASE_PATH
+        value: "canva_system.db"
